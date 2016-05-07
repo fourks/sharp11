@@ -20,37 +20,37 @@
 
     <section class="main-content">
       <h1>
-<a id="sharp11" class="anchor" href="#sharp11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sharp11</h1>
+<a id="sharp11" class="anchor" href="#sharp11" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sharp11</h1>
 
 <p>Music theorization and improvisation engine</p>
 
 <h2>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>Sharp11 is a node.js module for performing music theory operations, ranging from simple things like transposing a note to complicated things like generating an ordered list of scales that can be played over a given chord.  Sharp11 has gone through several iterations since I first thought of it in 2011 or so.  The previous iteration is a client-side web app written in bad JavaScript (I was like 16 at the time).  It has very similar functionality, and since I haven't written a front-end for the current version (but I hope to write one soon), I would suggest <a href="http://julianrosenblum.com/sharp11-old">playing around with it</a> to get a sense of what Sharp11 can do.</p>
 
 <h2>
-<a id="so-what-can-sharp11-do" class="anchor" href="#so-what-can-sharp11-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>So what can Sharp11 do?</h2>
+<a id="so-what-can-sharp11-do" class="anchor" href="#so-what-can-sharp11-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So what can Sharp11 do?</h2>
 
 <p>That's a good question.  Sharp11 can do a lot of really cool things.  It can perform music theory operations on notes.  It can produce and traverse scales.  It can tell you the notes in a chord given a chord symbol.  It can give you a reasonable chord symbol for a group of notes.  It can generate a jazz improvisation given chord changes and produce MIDI output.  The current version of sharp11 is just an API.  With the exception of the MIDI output option, all of these operations work within the world of Sharp11 objects (<a href="https://github.com/jsrmath/sharp11/blob/master/docs/note.md">note</a>, <a href="https://github.com/jsrmath/sharp11/blob/master/docs/scale.md">scale</a>, <a href="https://github.com/jsrmath/sharp11/blob/master/docs/chord.md">chord</a>, etc.).  The way I see it, these are the core modules of Sharp11 with which some cool programs can be built.  I consider the improv engine and the future front-end interface to be examples of projects that can be built with the core Sharp11 API.</p>
 
 <h2>
-<a id="help-me-figure-out-what-else-sharp11-can-do" class="anchor" href="#help-me-figure-out-what-else-sharp11-can-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>Help me figure out what else Sharp11 can do</h2>
+<a id="help-me-figure-out-what-else-sharp11-can-do" class="anchor" href="#help-me-figure-out-what-else-sharp11-can-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help me figure out what else Sharp11 can do</h2>
 
 <p>I embarked on Sharp11 with a clear sense of the functionality I wanted to implement but a much less clear sense of what I wanted it to be for the end-user.  And so I call upon you, the open source community.  Build cool things with Sharp11.  Extend the API.  Write applications on top of it.  Help me turn Sharp11 into a computer music ecosystem.</p>
 
 <h2>
-<a id="mutability" class="anchor" href="#mutability" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mutability</h2>
+<a id="mutability" class="anchor" href="#mutability" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mutability</h2>
 
 <p>Methods in Sharp11 do not mutate objects, but instead return new ones.  I feel that in music, a C4 should be a C4, not a reference to an object that might become a D4 at some point.  The same goes for chords, scales, and every other use case I've come across.  There's nothing stopping you from mutating objects in Sharp11, but if you plan to extend any Sharp11 APIs or build anything on top of Sharp11, please try to abide by this rule.</p>
 
 <h2>
-<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h2>
+<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API Documentation</h2>
 
 <p>Read the full Sharp11 API documentation <a href="https://github.com/jsrmath/sharp11/blob/master/docs">here</a>.</p>
 
 <h2>
-<a id="example-music-theory-operations" class="anchor" href="#example-music-theory-operations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Music Theory Operations</h2>
+<a id="example-music-theory-operations" class="anchor" href="#example-music-theory-operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Music Theory Operations</h2>
 
 <p><code>var s11 = require('sharp11');</code></p>
 
